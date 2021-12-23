@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+
+
+html,body{
+
+    height: 100%;
+}
+
+
+*{  font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(93, 89, 89, 1);
+}
+
+#display{
+    min-height: 60px;
+    margin: 0.5rem 0rem;
+    padding: 10px 10px;
+    border: 0.05px solid white;
+    border-radius: 10px;
+    color: white;
+    text-align: right;
+    font-size: 1.5rem;
+    transition: all 0.25s;
+}
+
+#display:hover{
+    border: none;
+    background-color: rgba(111, 108, 108, 1);
+}
+
+#operators .btn{
+    font-size: 25px;
+}
+
+/* utility classes */
+
+
+.btn{
+    background-color:rgba(53, 53, 53, 1) ;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    width: 5rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 0.25rem;
+}
+
+.btn:hover{
+    transform: translateY(-1px);
+    background-color: rgba(74, 74, 74, 1);
+}
