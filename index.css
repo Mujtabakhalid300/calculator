@@ -48,6 +48,8 @@ html,body{
     font-size: 25px;
 }
 
+
+
 /* utility classes */
 
 
@@ -55,8 +57,9 @@ html,body{
     background-color:rgba(53, 53, 53, 1) ;
     color: white;
     font-family: 'Oswald', sans-serif;
-    width: 5rem;
-    height: 3rem;
+    min-width: 5rem;
+    min-height: 3rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -67,4 +70,13 @@ html,body{
 .btn:hover{
     transform: translateY(-1px);
     background-color: rgba(74, 74, 74, 1);
+}
+
+#clear{
+    width: 100%;
+}
+#plus,#minus,#divide,#multiply{
+    min-width: 5rem;
+    min-height: 3rem;
+
 }
