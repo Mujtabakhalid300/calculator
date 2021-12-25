@@ -40,7 +40,13 @@ function checker(element){
             display.innerText += "\xa0"
 
             num1 = display.innerText.split('+')
-            num1 = parseInt(num1[0])
+            if(num1[0].includes('.')){
+                num1 = parseFloat(num1[0])
+            }
+            else{
+                num1 = parseInt(num1[0])
+
+            }
             operator='+'
       }
         else if(element.innerText=='-'){
@@ -48,7 +54,13 @@ function checker(element){
             display.innerText += "\xa0"
 
             num1 = display.innerText.split('-')
-            num1 = parseInt(num1[0])
+            if(num1[0].includes('.')){
+                num1 = parseFloat(num1[0])
+            }
+            else{
+                num1 = parseInt(num1[0])
+
+            }
             operator="-"
         }
         else if(element.innerText=='×'){
@@ -56,7 +68,13 @@ function checker(element){
             display.innerText += "\xa0"
 
             num1 = display.innerText.split('×')
-            num1 = parseInt(num1[0])
+            if(num1[0].includes('.')){
+                num1 = parseFloat(num1[0])
+            }
+            else{
+                num1 = parseInt(num1[0])
+
+            }
             operator="×"
         }
         else if(element.innerText=='÷'){
@@ -64,13 +82,25 @@ function checker(element){
             display.innerText += "\xa0"
 
             num1 = display.innerText.split('÷')
-            num1 = parseInt(num1[0])
+            if(num1[0].includes('.')){
+                num1 = parseFloat(num1[0])
+            }
+            else{
+                num1 = parseInt(num1[0])
+
+            }
             operator="÷"
         }
         else if(element.innerText=="="){
             num2 = display.innerText
             num2 = num2.split(operator)
-            num2 = parseInt(num2[1])
+            if(num2[1].includes('.')){
+                num2 = parseFloat(num2[1])
+            }
+            else{
+                num2 = parseInt(num2[1])
+
+            }
             display.innerText = work(operator)
             
         }
