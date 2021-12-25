@@ -36,25 +36,33 @@ function checker(element){
 
         }
         else if(element.innerText=='+'){
-            display.innerText = display.innerText.concat(element.innerText)
+            display.innerText += " ".concat(element.innerText)
+            display.innerText += "\xa0"
+
             num1 = display.innerText.split('+')
             num1 = parseInt(num1[0])
             operator='+'
       }
         else if(element.innerText=='-'){
-            display.innerText = display.innerText.concat(element.innerText)
+            display.innerText += " ".concat(element.innerText)
+            display.innerText += "\xa0"
+
             num1 = display.innerText.split('-')
             num1 = parseInt(num1[0])
             operator="-"
         }
         else if(element.innerText=='×'){
-            display.innerText = display.innerText.concat(element.innerText)
+            display.innerText += " ".concat(element.innerText)
+            display.innerText += "\xa0"
+
             num1 = display.innerText.split('×')
             num1 = parseInt(num1[0])
             operator="×"
         }
         else if(element.innerText=='÷'){
-            display.innerText = display.innerText.concat(element.innerText)
+            display.innerText += " ".concat(element.innerText)
+            display.innerText += "\xa0"
+
             num1 = display.innerText.split('÷')
             num1 = parseInt(num1[0])
             operator="÷"
